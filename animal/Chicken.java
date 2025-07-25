@@ -1,19 +1,22 @@
 package animal;
 
 public class Chicken extends Animal {
-    private final String eggColor;
+  private String eggColor;
 
-    public Chicken(String eggColor) {
-        super("Chicken");
-        this.eggColor = eggColor;
-    }
+  public Chicken(String type, String eggColor) {
+    super(type);
+    this.eggColor = eggColor;
+  }
 
-    public String getEggColor() {
-        return eggColor;
-    }
+  public String getEggColor() {
+    return eggColor;
+  }
 
-    @Override
-    public String getDetails() {
-        return "Type: " + type + ", Egg Color: " + eggColor;
-    }
+  public void setEggColor(String eggColor) {
+    this.eggColor = eggColor;
+  }
+
+  public String getDetails() {
+    return "Type: " + getType() + ", Egg Color: " + eggColor;
+  }
 }
