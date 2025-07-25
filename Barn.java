@@ -3,10 +3,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Barn {
+  @SuppressWarnings("FieldMayBeFinal")
   private static Scanner input = new Scanner(System.in);
+  @SuppressWarnings("FieldMayBeFinal")
   private static ArrayList<Cow> cows = new ArrayList<>();
+  @SuppressWarnings("FieldMayBeFinal")
   private static ArrayList<Chicken> chickens = new ArrayList<>();
 
+  @SuppressWarnings("ConvertToStringSwitch")
   public static void main(String[] args) {
     System.out.print("How many animals in the barn? ");
     int count = Integer.parseInt(input.nextLine());
